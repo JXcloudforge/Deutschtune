@@ -1,0 +1,32 @@
+# Sanitized historical Tatoeba LoRA example.
+# Derived from the recorded run; NOT the original run config and NOT ready to execute.
+model_name_or_path: ${A4_MODEL_PATH}
+trust_remote_code: true
+stage: sft
+do_train: true
+do_eval: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+dataset: a4_tatoeba_train
+eval_dataset: a4_tatoeba_validation
+dataset_dir: ${A4_DATASET_DIR}
+template: qwen
+cutoff_len: 512
+output_dir: ${A4_OUTPUT_DIR}
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+num_train_epochs: 2.0
+learning_rate: 0.0001
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+seed: 20261017
+logging_steps: 1
+save_steps: 250
+eval_steps: 250
+eval_strategy: steps
+bf16: true
+report_to: none

@@ -1,0 +1,14 @@
+# Third-party notices and rights review
+
+This file is an inventory of relevant third-party components, not a grant of rights and not legal advice. No third-party corpus, model weights, adapter, or screenshots are included in this repository.
+
+| Component | Historical use | License / terms known from local records | Release-candidate handling |
+|---|---|---|---|
+| Tatoeba German sentences | Source material for 9,500 word-restoration examples | Local attribution records report 9,499 CC BY 2.0 France and one CC0 1.0 row. Project authorization was limited to internal SFT, offline evaluation and non-public demonstration; public redistribution was not authorized. | No sentences, row manifest, username list, or source snapshot is included. A release-specific attribution review is still required. |
+| CC BY 2.0 France | Applies to the 9,499 rows as recorded in private source manifest | Attribution, license link, and adaptation notice obligations; exact source/contributor relationship is not independently verified. | [License](https://creativecommons.org/licenses/by/2.0/fr/). No row-level text is redistributed here. |
+| CC0 1.0 | Applies to one row as recorded in private source manifest | Public-domain dedication terms, subject to local law and source verification. | [Legal code](https://creativecommons.org/publicdomain/zero/1.0/). No row-level text is redistributed here. |
+| Qwen2.5-7B-Instruct | Historical base model | Local project references identify Apache-2.0 model-card metadata, but the exact used revision and corresponding license file are not pinned in this repository. | [Model page](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct). No weights/tokenizer are included; verify the exact revision and terms before use. |
+| LLaMA-Factory | Historical training framework, version 0.9.5 | Upstream project license must be checked against the exact revision used. | [Project](https://github.com/hiyouga/LLaMA-Factory). No framework source is vendored in this repository. |
+| Flask, Gunicorn, pytest, Python | Runtime/development components | Their upstream licenses remain with their respective projects; the candidate does not relicense dependencies. Gunicorn 23.0.0 is declared in `requirements-serving.txt` based on historical service records; this version declaration was not installed or validated in this R3 review. | Install and review each dependency from its official distribution metadata. See [Flask](https://flask.palletsprojects.com/) and [pytest](https://pytest.org/). |
+
+The repository root contains Apache-2.0 terms supplied with the GitHub repository. Those terms cover only project materials the project is authorized to license; they do not extend to unrelated datasets, models, frameworks, dependencies, or course materials. No corpus rows, model files, framework source, or screenshots are included here. Verify the exact upstream revision and its terms before acquiring or redistributing third-party assets.

@@ -1,0 +1,18 @@
+{
+  "host": "127.0.0.1",
+  "port": 20995,
+  "upstream_base_url": "http://127.0.0.1:8000/v1",
+  "served_model_name": "tatoeba-lora",
+  "timeout_seconds": 90,
+  "api_key_env": "A4_VLLM_API_KEY",
+  "require_tutor_gate": true,
+  "max_request_bytes": 262144,
+  "max_input_chars": 12000,
+  "tatoeba": {
+    "model_name": "tatoeba-lora",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 128
+  },
+  "system_prompt": "This legacy /chat route is disabled by the Tutor quality gate."
+}

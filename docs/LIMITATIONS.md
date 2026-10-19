@@ -1,0 +1,11 @@
+# DeutschTune limitations and release blockers
+
+1. **Release scope.** This repository retains the Apache-2.0 license supplied by its owner. It applies only to content the project is authorized to license; it does not grant rights to third-party data, model weights, frameworks, dependencies, or course materials. This is an engineering project release, not a production service.
+2. **Dataset restrictions.** Tatoeba sentences and row-level manifests are excluded. The recorded internal-use decision did not authorize public redistribution of data, weights, or adapters. CC BY/CC0 obligations still need a release-specific rights review.
+3. **Model terms.** Qwen2.5-7B-Instruct is named in the historical run; no model files are included. The exact model revision and license text need to be pinned and reviewed for any later redistribution or hosted use.
+4. **No human Gold.** The published aggregate uses machine Silver references. Human adjudication was not completed.
+5. **Narrow task and test.** The result covers a fixed, closed-form German word-restoration test under one parser and decoding setup. It does not establish general German competence, robust semantic reasoning, or performance outside this distribution.
+6. **Leakage uncertainty.** Exact/group checks were performed in the private project, but translation links and semantic leakage were not fully verified.
+7. **Serving is not production.** Historical HTTP and one OJAC example do not establish current uptime, public security, general user support, or a production deployment. This repository contains no live endpoint, secret, model, or deployment evidence. The A01 Tatoeba route has no inbound authentication. The default entrypoint enforces loopback binding and a bounded request body, but this remains a local example, not a public service.
+8. **Incomplete standalone reproducibility.** Data, model, adapter, raw predictions, and remote runtime are intentionally withheld. Public users can inspect selected code and synthetic tests only.
+9. **Third-party rights.** No dataset rows, model weights, adapters, raw predictions, or course source files are included. Review each upstream license independently before obtaining or redistributing those assets. The historical dataset use was authorized for a limited internal course scope; that authorization is not a public data redistribution grant.

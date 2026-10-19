@@ -1,0 +1,14 @@
+{
+  "a4_tatoeba_train": {
+    "file_name": "a4_tatoeba_train.jsonl",
+    "formatting": "sharegpt",
+    "columns": {"messages": "messages"},
+    "tags": {"role_tag": "role", "content_tag": "content", "user_tag": "user", "assistant_tag": "assistant", "system_tag": "system"}
+  },
+  "a4_tatoeba_validation": {
+    "file_name": "a4_tatoeba_validation.jsonl",
+    "formatting": "sharegpt",
+    "columns": {"messages": "messages"},
+    "tags": {"role_tag": "role", "content_tag": "content", "user_tag": "user", "assistant_tag": "assistant", "system_tag": "system"}
+  }
+}
