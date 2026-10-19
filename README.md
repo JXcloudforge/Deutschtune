@@ -4,11 +4,11 @@
 
 **DeutschTune — German LLM Fine-Tuning, Evaluation & GPU Serving**
 
-> 发布状态：已发布至 GitHub。建议仓库描述：*Qwen2.5 LoRA fine-tuning, frozen-test evaluation, and local Flask/vLLM serving for German word restoration.*
+> 仓库简介：*Qwen2.5 LoRA fine-tuning, frozen-test evaluation, and local Flask/vLLM serving for German word restoration.*
 
 ## Project Overview
 
-DeutschTune is an engineering case study for a **closed-form German word-restoration task**. It covers data validation, Qwen2.5-7B-Instruct LoRA fine-tuning, paired Base/LoRA evaluation on a fixed test split, and a vLLM-to-Flask serving path. The public candidate contains selected source and aggregate evidence, not the corpus, model, adapter, raw predictions, credentials, or a live deployment.
+DeutschTune is an engineering case study for a **closed-form German word-restoration task**. It covers data validation, Qwen2.5-7B-Instruct LoRA fine-tuning, paired Base/LoRA evaluation on a fixed test split, and a vLLM-to-Flask serving path. This repository contains selected source and aggregate evidence, not the corpus, model, adapter, raw predictions, credentials, or a live deployment.
 
 ## Problem
 
